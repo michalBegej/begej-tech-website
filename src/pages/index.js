@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import SEO from "../components/SEO"
 
 const IndexPage = () => (
-  <Layout pageTitle="Index">
+  <Layout pageTitle="Index" isHomePage={true}>
     <SEO title={"Michal Begej - Senior software developer"} useGlobalTitle={false} />
     <div className="w-3/4 flex flex-col pr-1 pl-1 sm:w-3/5 md:w-3/5 lg:w-3/6 xl:w-2/6">
       <div className="font-sans text-sky-600 text-5xl sm:text-6xl md:text-7xl">

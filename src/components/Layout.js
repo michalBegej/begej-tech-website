@@ -1,9 +1,24 @@
 import * as React from 'react'
+import Navigation from './Navigation'
 
-const Layout = ({ pageTitle, children }) => (
+const HomePageLayout = ({ children }) => (
     <div className='container mx-auto h-screen w-full flex justify-center items-center bg-slate-50' >
         {children}
     </div>
+)
+
+const DefaultPageLayout = ({ children, currentPageId }) => (
+    <div className='bg-slate-50'>
+        <Navigation currentPageId={currentPageId} />
+        {children}
+    </div>
+)
+
+const Layout = ({ pageTitle, children, isHomePage, currentPageId }) => (
+    isHomePage ?
+        <HomePageLayout children={children} />
+        :
+        <DefaultPageLayout children={children} currentPageId= {currentPageId}/>
 )
 
 export default Layout
