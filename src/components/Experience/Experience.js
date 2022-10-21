@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import JobRecord from './JobRecord';
+import Section from '../Section';
 
 function Experience() {
     const jobs = [
@@ -62,16 +63,17 @@ function Experience() {
     ]
 
     return (
-        <div className="font-sans min-h-96 p-2 flex flex-col" >
-            <h1 className='font-bold text-sky-600'>EXPERIENCE</h1>
+        <Section title={'EXPERIENCE'}>
             {jobs.map(job => <JobRecord
                 companyName={job.companyName}
                 position={job.position}
                 period={job.period}
                 duties={job.duties}
             />)}
-        </div>
+        </Section>
     )
 }
+
+
 
 export default Experience;

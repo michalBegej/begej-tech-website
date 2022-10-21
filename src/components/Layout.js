@@ -11,7 +11,7 @@ const HomePageLayout = ({ children }) => (
 const DefaultPageLayout = ({ children, currentPageId }) => (
     <div className='bg-slate-50 min-h-screen flex flex-col'>
         <Navigation currentPageId={currentPageId} />
-        <div className='container mx-auto h-screen w-full flex flex-col justify-between bg-yellow-50'>
+        <div className='container mx-auto h-screen w-full flex flex-col justify-between'>
             {children}
         </div>
         {/* <Footer/> */}
