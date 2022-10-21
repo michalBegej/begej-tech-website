@@ -7,5 +7,4 @@ const Section = ({ children, title }) => (
     </div>
 )
 
-
 export default Section;

@@ -5,6 +5,7 @@ import SEO from "../components/SEO"
 import Experience from "../components/Experience/Experience"
 import Education from "../components/Education/Education"
 import Skils from "../components/Skills/Skils"
+import Hobbies from "../components/Hobbies/Hobbies";
 
 const IndexPage = () => (
   <Layout pageTitle="Software development" currentPageId="development">
@@ -13,6 +14,7 @@ const IndexPage = () => (
       <Experience/>
       <Skils/>
       <Education/>
+      <Hobbies />
   </Layout>
 )
 
