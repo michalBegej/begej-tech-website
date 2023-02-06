@@ -10,11 +10,19 @@ import Hobbies from "../components/Hobbies/Hobbies";
 const IndexPage = () => (
   <Layout pageTitle="Software development" currentPageId="development">
     <SEO title={"Michal Begej - Senior software developer"} useGlobalTitle={false} />
-      <About/>
-      <Experience/>
-      <Skils/>
-      <Education/>
-      <Hobbies />
+    <div>
+      <About />
+    </div>
+    <div className="lg:flex">
+      <div className="flex-auto">
+        <Experience />
+      </div>
+      <div className="basis-1/5">
+        <Skils />
+        <Education />
+        <Hobbies />
+      </div>
+    </div>
   </Layout>
 )
 
